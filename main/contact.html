@@ -6,17 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-          a:hover{
+          a.link:hover{
             color: white;
+            font-size: 25px;
+            font-style: italic;
         }
         .img:hover{
         color: white;
+       }
+       .p{
+        padding-right: 20px;
        }
         .img{
            background-color: purple;
            width: 20px;
            height: 200px;
-           position: absolute;
+           position: fixed;
            border-radius: 20px;
            right: 30PX;
            top: 200px;
@@ -47,7 +52,7 @@
         font-weight: 700;
        }
        img.pic{
-            width: 260px;
+            width: 100%;
             height: 240px;
         }
         a.link{
@@ -72,9 +77,23 @@
         text-align: justify;
         padding-top: 20px;
         padding-left: 20px;
+        margin-right: 50px;
         line-height: 25px;
+        width: 500px;
         font-style: italic;
-    
+        display: inline;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 500;
+       }
+       .hub{
+        font-size: 25px;
+        padding-top: 50px;
+       }
+       .tel{
+        display: inline;
+        font-size: 20px;
+        font-weight: 600;
+
        }
        .contact{
         display: flex;
@@ -82,10 +101,10 @@
        #contact{
         padding-top: 50px;
         padding-right: 200px;
-        padding-left: 150px;
+        padding-left: 100px;
        }
        .text{
-        padding-left: 26px;
+        padding-left: 20px;
        }
        .text1{
         padding-left: -5px;
@@ -97,6 +116,56 @@
        .two{
         padding-left: 60px;
        }
+       .mail{
+        font-size: 20px;
+        font-weight: 600;
+       }      
+        @media screen and (min-width: 700px)and (max-width:1100px){ 
+            .first{
+                display: none;
+            }
+            .second{
+                width: 100%;
+                height: 100%;
+            }
+            .contact{
+                display: inline;
+                padding-left: 10px;
+            }
+            h3{
+                padding-left: 120px;
+            }
+       }
+       @media screen and (min-width: 300px)and (max-width:700px){ 
+            .first{
+                display: none;
+            }
+            .second{
+                width: 100%;
+                height: 100%;
+            }
+            .p{
+                padding-left: 10px;
+            }
+            .contact{
+                display: inline;
+            }
+            #contact{
+                padding-left: 20px;
+            }
+            h3{
+                padding-left: 10px;
+            }
+            h1{
+        font-size: 40px;
+        margin-left: 50px;
+        border: 1px solid black;
+        width: 200px;
+        padding-right:30px ;
+       }
+       }
+
+
    </style>
 </head>
 <body>
@@ -105,7 +174,7 @@
         <div class="first">
                 <img class="pic" src="../pics/girl.jpg" alt="">
                 <a class="link" style="padding-top: 40px;" href="../main/index.html">HOME</a><br>
-                <a class="link" href="../main/contact.html">ABOUT ME</a><br>
+                <a class="link" href="../main/about.html">ABOUT ME</a><br>
                 <a class="link" href="../main/resume.html">RESUME</a><br>
                 <a  class="link" href="../main/portofoli.html">PORTFOLIO</a><br>
                 <a class="link" href="../main/testimoanls.html">TESTIMONALS</a><br>
@@ -114,16 +183,18 @@
         <div class="second">
             <div class="two"> 
                 <h1>CONTACT</h1>
-                <p>INCASE YOU WANT TO BOOK AN APPONTMENT WE ARE GOING TO WRITE DOWN THE NUMBER TO CALL OR   WHERE YOU <br> CAN MAIL US. <br> THANK YOU VERY MUCH FOR YOUR PATRONAGE. <br> WE WILL GET BACK TO AS SOON AS POSSIBLE. <br> <b>PLEASE BE PATIENT.</b> IF YOU HAVE ANY QUESTIONS, COTACT OUR ER SERVIC IN TIME TO DEAL IT FOR YOU. </p>
+              <div class="p"> <p>INCASE YOU WANT TO BOOK AN APPONTMENT WE ARE GOING TO WRITE DOWN THE NUMBER TO CALL OR   WHERE YOU CAN MAIL US. THANK YOU VERY MUCH FOR YOUR PATRONAGE. WE WILL GET BACK TO AS SOON AS POSSIBLE.  <b>PLEASE BE PATIENT.</b> IF YOU HAVE ANY QUESTIONS, CONTACT OUR ER SERVICE IN TIME TO DEAL IT FOR YOU. </p></div>  
                 <div class="contact">
                     <div id="contact">
                     <img  src="../pics/pc.jpg" alt="">
-                    <div class="text1">mallach@gmail.com <br>  achazla@gmail.com</div> 
-                </div>
+                    <div class="text1"> <div class="mail">Email: </div> <a href="http://gmail,com">christabelezike@gmail.com</a></div> 
+                </div> 
                     <div id="contact">
-                    <img  src="../pics/call.jpg" alt=""><div class="text" >09061234567 <br> 08076453218</div>
+                    <img  src="../pics/call.jpg" alt="">
+                    <div class="text"> <div class="tel">Telephone:</div><a href="http://call">09063767667</a> </div>
                 </div>
                 </div>
+                <div class="hub">You can find me on github <a href="http://github.com">https://chiella31.github.io/chiellaxx/</a></div>
                 <h3>THANKS FOR PATRONIZING US</h3>
             <div class="img">
                <a href="index.html" > <img style="padding-top: 10px; padding-left: 2px;" src="../pics/home.jpg" alt="" >  </a>

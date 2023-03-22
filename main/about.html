@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        a:hover{
+        a.link:hover{
             color: white;
+            font-size: 25px;
+            font-style: italic;
         }
         .img:hover{
         color: white;
@@ -16,7 +18,7 @@
             background-color: purple;
             width: 20px;
             height: 200px;
-            position: absolute;
+            position: fixed;
             border-radius: 20px;
             right: 30PX;
             top: 200px;
@@ -27,8 +29,6 @@
             height: 649px;
             box-shadow: 2px 2px 5px grey,10px 10px 15px gray,-1px -1px 30px grey;
             background-color: purple;
-            
-
         }
         .second{
             width: 80%;
@@ -48,7 +48,7 @@
         font-weight: 700;
        }
        img.pic{
-            width: 260px;
+            width: 100%;
             height: 240px;
         }
         a.link{
@@ -76,7 +76,7 @@
         font-size: 14px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
        }
-       h4{
+       h4.head{
         padding-left: 100px;
         font-size: 25px;
         font-weight: 300;
@@ -106,44 +106,53 @@
         color: wheat;
        }
        #float{
-        float: right;
-        position: absolute;
-        top: 270px;
-        right: 300px;
+        margin-top: -20px;
+        margin-left: 50px;
        }
        .type{
+        width: 200px;
+        height: 50px;
+        float:none;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        padding-left: 38px;
+        padding-bottom:px;
+       }
+       #do{
+        display: flex;
+       }
+       .shoot{
         width: 250px;
         height: 50px;
-        float: right;
-        position: absolute;
-        top: 85px;
-        right: -230px;
+        float: none;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        padding-left: 20px;
        }
+       .brush{
+        width: 250px;
+        height: 50px;
+        float: none;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        padding-left: 20px;}
        #type{
         font-size: 13px;
+        margin-bottom: 20px;
+       }
+       #do{
+        margin-top: -20px;
+        padding-bottom: 30px;
        }
        b{
         font-size: 15px;
         font-weight: 900;
        }
-       .shoot{
-        width: 250px;
-        height: 50px;
-        float: right;
-        position: absolute;
-        top: 180px;
-        right: -250px
-       }
        #shoot{
         font-size: 13px;
-       }
-       .brush{
-        width: 250px;
-        height: 50px;
-        float: right;
-        position: absolute;
-        top: 280px;
-        right: -260px
        }
        #brush{
         font-size: 13px;
@@ -151,6 +160,236 @@
        .bold{
         font-weight: 500;
        }
+       .flex{
+        display: flex;
+       }
+       h4#head{
+        font-size: 25px;
+        font-weight: 300;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       }
+       @media screen and (min-width: 900px)and (max-width:1250px){ 
+        .first{
+            display: none;
+        }
+        .flex{
+            display: block;
+        }
+        #float{
+            position: relative;
+            top: 0px;right: 0px;
+            float:none ;
+            padding-left: 270px;
+        }
+        .second{
+            width: 100%;
+            height: 100%;
+        }
+        .type{
+        width: 250px;
+        height: 50px;
+        float:none;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        padding-left: 38px;
+       }
+       #do{
+        display: flex;
+       }
+       .shoot{
+        width: 250px;
+        height: 50px;
+        float: none;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        padding-left: 20px;
+       }
+       .brush{
+        width: 250px;
+        height: 50px;
+        float: none;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        padding-left: 20px;
+
+       }
+    #box{
+        padding-left: 200px;
+    }
+    
+       }
+       @media screen and (min-width: 1450px)and (max-width:2000px){ 
+        #float{
+        /* float: right; */
+        /* position: absolute; */
+        /* top: 270px; */
+        /* right: 300px; */
+        margin-top: -20px;
+        margin-left: 100px;
+       }
+    }
+    @media screen and (min-width: 600px)and (max-width:900px){ 
+        .first{
+            display: none;
+        }
+        .flex{
+            display: block;
+        }
+        #float{
+            position: relative;
+            top: 0px;right: 0px;
+            float:none ;
+            padding-top: 10px;
+            padding-left: 120px;
+        }
+        .second{
+            width: 110%;
+            height: 100%;
+        }
+        .type{
+        width: 250px;
+        height: 50px;
+        float:none;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        padding-left: 38px;
+       }
+       #do{
+        display: flex;
+       }
+       .shoot{
+        width: 250px;
+        height: 50px;
+        float: none;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        padding-left: 20px;
+       }
+       .brush{
+        width: 250px;
+        height: 50px;
+        float: none;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        padding-left: 20px;
+
+       }
+    h1{
+        font-size: 50px;
+        margin-left: 130px;
+        border: 1px solid black;
+        width: 270px;
+        padding-left:30px ;
+        padding-top:10px ;
+        padding-bottom:10px ;
+        padding-right:30px ;
+       }
+       #box{
+        padding-left: 75px;
+       }
+       h4.head{
+        padding-left: 30px;
+        font-size: 25px;
+        font-weight: 300;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       }
+    p{
+        padding-top: -20px;
+        padding-left: 50px;
+        padding-right: 60px;
+        font-size: 14px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        
+       }
+       
+    }
+    @media screen and (min-width: 200px)and (max-width:600px){ 
+        .first{
+            display: none;
+        }
+        .flex{
+            display: block;
+        }
+        #float{
+            position: relative;
+            top: 0px;right: 0px;
+            float:none ;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+        .second{
+            width: 110%;
+            height: 100%;
+        }
+        .type{
+        width: 250px;
+        height: 50px;
+        float:none;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        padding-left: 38px;
+       }
+       #do{
+        display: flex;
+       }
+       .shoot{
+        width: 250px;
+        height: 50px;
+        float: none;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        padding-left: 20px;
+       }
+       .brush{
+        width: 250px;
+        height: 50px;
+        float: none;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        padding-left: 20px;
+
+       }
+    h1{
+        font-size: 30px;
+        margin-left: 130px;
+        border: 1px solid black;
+        width: 170px;
+        padding-left:10px ;
+        padding-top:10px ;
+        padding-bottom:10px ;
+        padding-right:30px ;
+       }
+       #box{
+        padding-left: 20px;
+       }
+       h4.head{
+        padding-left: 20px;
+        font-size: 25px;
+        font-weight: 300;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       }
+    p{
+        padding-top: -20px;
+        padding-left: 20px;
+        padding-right: 60px;
+        font-size: 14px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        
+       }
+       
+    }
+
+
+
 
     </style>
 </head>
@@ -159,7 +398,7 @@
     <div class="first">
             <img class="pic" src="../pics/girl.jpg" alt="">
             <a class="link" style="padding-top: 40px;" href="../main/index.html">HOME</a><br>
-            <a style="color: white;" class="link" href="../main/contact.html">ABOUT ME</a><br>
+            <a style="color: white;" class="link" href="../main/about.html">ABOUT ME</a><br>
             <a class="link" href="../main/resume.html">RESUME</a><br>
             <a  class="link" href="../main/portofoli.html">PORTFOLIO</a><br>
             <a class="link" href="../main/testimoanls.html">TESTIMONALS</a><br>
@@ -168,8 +407,9 @@
     <div class="second">
         <div>
             <h1>ABOUT ME</h1>
-            <h4>I'm <label for="" class="bold">Christabel Ezike</label> Makeup Artist/Hair Stylist.</h4>
+            <h4 class="head">I'm <label for="" class="bold">Christabel Ezike</label> Makeup Artist/Hair Stylist.</h4>
             <p>I have been a passionate makeup artist for over 10 years. Fully qualified as both a hair stylist anad makeup technician. With a degree in art and an ability to connect with each individual client. I have to work within such a broad and creative industry. I now have an extensive portofolio of projects of projects comparising of everything from bridal hair and fashion shoots to catwalk models and media stars.</p>
+            <div class="flex">
             <div id="box">
                 <div class="two">
                    <div style="padding-left: 80px;" class="box">10+
@@ -188,21 +428,22 @@
                 </div>
             </div>
             <div id="float">
-                <h4>What I Do?</h4>
-                <div>
-                <img id="img" style="padding-left: 100px;" src="/pics/wig.jpg" alt="">
+                <h4 id="head">What I Do?</h4>
+                <div id="do">
+                <img id="img"  src="/pics/wig.jpg" alt="">
                 <div id="type" class="type"><b>WIG/HAIR MAKING</b><br>As I said earlier, I am a hairstylist and I also engage in wig making, and I ensure I make one of the best and finest wigs you will ever wear.</div>
             </div>
-            <div>
-                <img id="img" style="padding-left: 100px;" src="/pics/cam.jpg" alt="">
+            <div id="do">
+                <img id="img"  src="/pics/cam.jpg" alt="">
                 <div id="shoot" class="shoot"><b>STUDIO/PHOTOSHOOT</b><br>We also have a studio which can be used for photoshoot, incase you are inttrested in taking pictures after your makeup.</div>
             </div>
-            <div>
-                <img id="img" style="padding-left: 100px;" src="/pics/brush.jpg" alt="">
+            <div id="do">
+                <img id="img" src="/pics/brush.jpg" alt="">
                 <div class="brush" id="brush"><b>MAKEUP</b><br> As i mentioned earlier I am also a makeup artist. I do all type of makeup whether bridal or birthday parties. I render the best services.</div>
                 
             </div>
             </div>
+        </div>
         <div class="img">
            <a href="index.html" > <img style="padding-top: 10px; padding-left: 2px;" src="../pics/home.jpg" alt="" >  </a>
            <a href="about.html"> <img style="padding-left: 2px; padding-top: 25px;" src=" "alt=""><img src="../pics/cast.jpg" alt=""></a>

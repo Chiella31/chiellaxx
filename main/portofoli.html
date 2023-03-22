@@ -10,7 +10,7 @@
            background-color: purple;
            width: 20px;
            height: 200px;
-           position: absolute;
+           position: fixed;
            border-radius: 20px;
            right: 30PX;
            top: 200px;
@@ -34,7 +34,7 @@
            display: flex;
        }
         img.pic{
-            width: 260px;
+            width: 100%;
             height: 240px;
 
        }
@@ -72,19 +72,95 @@
         padding: 3px;
     }
     a:hover{
-            color: white;
-        }
-        .img:hover{
         color: white;
+        font-size: 25px;
+        font-style: italic;
+        }
+    .img:hover{
+        color: white;
+        font-size: 20px;
        }
+       .links{
+            color: magenta;
+            margin-left: 280px;
+        }
+       @media screen and (min-width: 900px)and (max-width:1250px){ 
+        .first{
+            display: none;
+        }
+        .second{
+            height: 100%;
+            width: 100%;
+        }
+        .links{
+            color: magenta;
+            padding-left: 280px;
+        }
+       }
+       @media screen and (min-width: 630px)and (max-width:900px){ 
+        .first{
+            display: none;
+        }
+        .second{
+            height: 100%;
+            width: 100%;
+        }
+        h1{
+        font-size: 50px;
+        margin-left: 130px;
+        border: 1px solid black;
+        width: 350px;
+        padding-left:30px ;
+        padding-top:10px ;
+        padding-bottom:10px ;
+        padding-right:30px ;
+       }
+       .links{ 
+        margin-left: 10px;
+       }
+       }
+       @media screen and (min-width: 200px)and (max-width:630px){ 
+        .first{
+            display: none;
+        }
+        .links{
+        margin-left: 10px;
+       }
+        .second{
+            height: 100%;
+            width: 100%;
+        }
+        h1{
+        font-size: 30px;
+        margin-left: 20px;
+        border: 1px solid black;
+        width: 190px;
+        padding-left:30px ;
+        padding-top:10px ;
+        padding-bottom:10px ;
+        padding-right:30px ;
+       }
+       a.all{
+        padding-left: 0px;
+        font-size: 15px;
+       }
+       a:hover{
+        color: white;
+        font-size: 20px;
+        font-style: italic;
+        }
+       }
+       
+       
+
    </style>
 </head>
 <body>
     <div class="main">
         <div class="first">
             <img class="pic" src="../pics/girl.jpg" alt="">
-            <a class="link" style="padding-top: 40px;" href="../main/head.html">HOME</a><br>
-            <a class="link" href="../main/contact.html">ABOUT ME</a><br>
+            <a class="link" style="padding-top: 40px;" href="../main/index.html">HOME</a><br>
+            <a class="link" href="../main/about.html">ABOUT ME</a><br>
             <a class="link" href="../main/resume.html">RESUME</a><br>
             <a style="color: white;" class="link" href="../main/portofoli.html">PORTFOLIO</a><br>
             <a class="link" href="../main/testimoanls.html">TESTIMONALS</a><br>
@@ -93,10 +169,12 @@
       <div class="second">
             <div>
                 <h1>PORTOFOLIO</h1>
-                <a  style="color: magenta;padding-left: 280px;" class="all" href="../main/portofoli.html">ALL</a>
+                <div >
+                <a class="all links" style="color: purple;" href="../main/portofoli.html">ALL</a>
                 <a class="all" href="../main/all.html">MAKEUP</a>
                 <a class="all" href="../main/one.html">HAIR STYLING</a>
                 <a class="all" href="../main/two.html">GELE TYING</a>
+            </div>
                 <div id="pics"> 
                     <img class="pics" src="../pics/one.jpg" alt="">
                     <img class="pics" src="../pics/two.jpg" alt="">
@@ -118,7 +196,7 @@
                     <img class="pics" src="../pics/eighteen.jpg" alt="">
                 </div>
             <div class="img">
-               <a href="head.html" > <img style="padding-top: 10px; padding-left: 2px;" src="../pics/home.jpg" alt="" >  </a>
+               <a href="index.html" > <img style="padding-top: 10px; padding-left: 2px;" src="../pics/home.jpg" alt="" >  </a>
                <a href="about.html"> <img style="padding-left: 2px; padding-top: 25px;" src=" "alt=""><img src="../pics/contact.jpg" alt=""></a>
                <a href="resume.html"> <img  src=" "alt=""><img style="padding-left: 2px; padding-top: 13px;" src="../pics/brief.jpg" alt=""></a>
                <a href="portofoli.html"> <img  src=" "alt=""><img style="padding-left: 3px; padding-top: 12px;" src="../pics/image.jpg" alt=""></a>

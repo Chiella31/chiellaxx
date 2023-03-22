@@ -13,15 +13,25 @@
             /* border: 1px solid black; */
             box-shadow: 2px 2px 5px grey,10px 10px 15px gray,-1px -1px 30px grey
         }
+        #name{
+            font-size: 60px;
+        }
          .second{
             width: 50%;
-            height:649px;
+            height:100%;
             /* border: 1px solid black; */
             box-shadow: 2px 2px 5px grey,10px 10px 15px gray,-1px -1px 30px grey
-
+        }
+        #photo:hover{
+            color: white;
         }
         .main{
             display: flex;
+        }
+        a#id:hover{
+            font-size: 30px;
+            color: white;
+            background-color: white;
         }
         .h1{
             font-size: 40px;
@@ -47,35 +57,91 @@
             height: 200px;
             position: absolute;
             border-radius: 20px;
-            right: 30PX;
+            right: 50PX;
             top: 200px;
             padding: 5px;
         }
         #pic{
-            width: 646px;
+            width: 100%;
             height: 649px;
         }
         p.font{
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: large;
-            font-weight: 500;
-            margin-bottom: 50px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 40px;
+            padding-right: 60px;
 
         }
         a:hover{
             color: white;
+            font-size: 20px;
         }
         .img:hover{
         color: white;
        }
+       @media screen and (min-width: 800px)and (max-width:1200px){ 
+        .body{
+            padding-left: 30px;
+            padding-top: 20px;
+        }
+
+       }
+         @media screen and (min-width: 200px)and (max-width:800px){ 
+        div.main{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .first{
+            width: 100%;
+        }
+        p.font{
+            margin-bottom: 10px;
+        }
+        .img{
+            position: fixed;
+             right: 30PX;
+             top: 200px;
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* height: 20px; */
+            /* width: 200px; */
+            /* padding: 5px; */
+        }
+        /* #icon{
+            transform: rotate(90deg);
+        } */
+        .second{
+            width: 100%;
+        }
+        #img{
+            width: 100%;
+        }
+        .body{
+            padding-left: 30px;
+            padding-top: 20px;
+        }
+    }
+    /* @media screen and (min-width :220px) {
+        p.font{
+            font-size: 14px;
+        }
+        .first{
+            width: 100%;
+        }
+    #name{
+        font-size: 40px;
+    }
+     } */
+
     </style>
 </head>
 <body>
     <div class="main">
         <div class="first">
             <div class="body">
-            <div class="h1">HI THERE!</div>
-            <div style="font-size: 60px;">I'M <label style="color:purple" for="">CHRISTABEL</label></div>
+            <div id="name" class="h1">HI THERE!</div>
+            <div id="name" >I'M <label style="color:purple;font-family: Verdana, Geneva, Tahoma, sans-serif;" for="">CHRISTABEL</label></div>
             <div style="background-color: PURPLE; width: 260px;padding: 5px;font-weight: 800;">MAKEUP ARTIST|HAIR STYLIST</div>
             <p  class="font">The creation of beauty ia an art, and we are those artists. <br>
                  I have the power to give you a flawless glow. "Thank you for making me look my best when i am in my front camera lens and when i am in front of the computer screen." That what your going to keep on saying when I am done with you. <br> I am an artist-you face is my canvas. I also engage in hair styling and gele tying</p>
@@ -86,12 +152,12 @@
             <div>
                 <img id="pic" src="../pics/girl.jpg" alt="">
             <div class="img">
-               <a href="index.html" > <img style="padding-top: 10px; padding-left: 2px;" src="../pics/house.jpg" alt="" >  </a>
-               <a href="about.html"> <img style="padding-left: 2px; padding-top: 25px;" src=" "alt=""><img src="../pics/contact.jpg" alt=""></a>
-               <a href="resume.html"> <img  src=" "alt=""><img style="padding-left: 2px; padding-top: 13px;" src="../pics/brief.jpg" alt=""></a>
-               <a href="portofoli.html"> <img  src=" "alt=""><img style="padding-left: 3px; padding-top: 12px;" src="../pics/pic.jpg" alt=""></a>
-               <a href="testimoanls.html"> <img  src=" "alt=""><img style="padding-left: 2px;padding-top: 12px;" src="../pics/speak.jpg" alt=""></a>
-               <a href="contact.html"> <img  src=" "alt=""><img style="padding-left: 2px; padding-top: 12px;" src="../pics/mess.jpg" alt=""></a>
+               <a href="index.html" > <img id="photo icon" style="padding-top: 10px; padding-left: 2px;" src="../pics/house.jpg" alt="" >  </a>
+               <a href="about.html"> <img id="icon" style="padding-left: 2px; padding-top: 25px;" src=" "alt=""><img src="../pics/contact.jpg" alt=""></a>
+               <a href="resume.html"> <img  src=" "alt=""><img id="icon" style="padding-left: 2px; padding-top: 13px;" src="../pics/brief.jpg" alt=""></a>
+               <a href="portofoli.html"> <img  src=" "alt=""><img id="icon" style="padding-left: 3px; padding-top: 12px;" src="../pics/pic.jpg" alt=""></a>
+               <a href="testimoanls.html"> <img  src=" "alt=""><img id="icon" style="padding-left: 2px;padding-top: 12px;" src="../pics/speak.jpg" alt=""></a>
+               <a href="contact.html"> <img  src=" "alt=""><img id="icon" style="padding-left: 2px; padding-top: 12px;" src="../pics/mess.jpg" alt=""></a>
             </div>
             </div>
         </div>
